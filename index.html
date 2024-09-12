@@ -25,13 +25,15 @@
 
         .section1 {
             width: 81%;
-            height: 12rem;
+            height: 10rem;
             background: #bc4e9c; 
             background: linear-gradient(to right, #f80759, #bc4e9c); 
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 15px;
+            padding-left: 5px;
+            border-radius: 10px;
         }
 
         .profile-img-section {
@@ -95,7 +97,7 @@
 
         p {
             padding-left: 10px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-size: 1rem;
             padding-top: 10px;
             padding-bottom: 10px;
@@ -110,10 +112,7 @@
         }
 
         span {
-            color: gold;
-        }
-        th{
-            background-color: rgb(194, 194, 36)    ;
+            color: rgb(177, 153, 15);
         }
         /* Skills List */
        
@@ -216,11 +215,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 100px;
         }
 
         .child {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -261,7 +261,7 @@
         height: 100%;
         border: none;
         background-color: transparent;
-        font-size: 20px;
+        font-size: 25px;
         transition-duration: 0.5s;
         transition-timing-function: cubic-bezier(0.68, -0.85, 0.265, 1.55);
         }
@@ -289,107 +289,218 @@
         *::-webkit-scrollbar-thumb
         {
             background: #C6FFDD;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: -webkit-linear-gradient(to right, #d8128c, #df428e, #960572);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #7b045c, #df2da9, #7f045eae); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
         }
 
+         /* Education Section */
+         .section-title {
+            padding-bottom: 15px;
+            
+        }
+
+        .education-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .education-icon {
+            position: relative;
+            margin-right: 35px;
+            text-align: center;
+        }
+
+        .year {
+            display: flex;
+            background-color: rgb(150, 8, 103);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 0 10px 0 10px;
+            margin: 15px;
+            /* margin-right: 20px; */
+        }
+
+        .bag-icon {
+            width: 50px;
+            height: 60px;
+            padding-bottom: 10px;
+            
+        }
+
+        .education-details {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .education-details h3 {
+            margin: 0 0 5px;
+        }
+
+        .education-details p {
+            margin: 0;
+            
+        }
+        .section6 {
+            width: 970px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            font-weight: bold;
+            border-radius: 5px;
+            background: #68043e;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #6aa702, #e22da0);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #02ab7e, #8d0d76);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            margin-bottom: 1.3rem;
+
+        }
+
+        
+        
     </style>
 </head>
 <body>
 
     <div class="section1">
         <div class="profile-img-section">
-            <img src="assest/img/Profile.jpg" alt="Deadpool" class="profile-img">
+            <img src="assest/img/orig.webp" alt="Deadpool" class="profile-img">
         </div>
         <div class="profile-data">
-            <h1>Ranjith</h1>
-            <h3>ranjithpal17@gmail.com</h3>
+            <h1 style = "color:#e0e0e0; font-family: Georgia, 'Times New Roman', Times, serif">Ranjith</h1>
+            <h3 style = "color:#d6b006fe; font-family: Georgia, 'Times New Roman', Times, serif">Creative & Aspiring CSE Student</h3>
         </div>
     </div>
 
     <div class="section2">
-        <h1 class="section-title">Objectives</h1>
-        <p>I am a Passionate and aspiring Designer. I am intermediate in programming language and good in designing .</p>
+        <h1 class="section-title">ABOUT ME</h1>
+        <p>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am proficient in programming languages like Java, C, and Python at an intermediate level, and have strong skills in designing and front-end &nbsp;&nbsp;development.
+             I am experienced in creating responsive and user-friendly web layouts using HTML, CSS, and JavaScript. 
+            Additionally, I have a solid understanding of UI/UX design tools such as Figma, allowing me to bridge the gap between design and development effectively..</p>
     </div>
 
     <div class="section3">
-        <h1 class="section-title">Education</h1>
-        <table class="ed-table">
-            <tr>
-                <th>Degree</th>
-                <th>Campus</th>
-                <th>CGPA</th>
-            </tr>
-            <tr>
-                <td>BE CSE</td>
-                <td>SIET</td>
-                <td>8.78</td>
-            </tr>
-            <tr>
-                <td>BE ECE</td>
-                <td>SIET</td>
-                <td>8.10</td>
-            </tr>
-            <tr>
-                <td>BE CSE</td>
-                <td>SIET</td>
-                <td>9.78</td>
-            </tr>
-        </table>
+        <h1 class="section-title">EDUCATION</h1>
+        <div class="education-item">
+            <div class="education-icon">
+                <img src="/assest/img/briefcase.png" alt="Bag Icon" class="bag-icon">
+                <span class="year">2020 - 2021</span>
+            </div>
+            <div class="education-details">
+                <h3>High School</h3>
+                <p>M.Nanjappa Chettair Matriculation Higher Secondary School Muthalipalayam pirivu, Arasur Post<br> Coimbatore - 641407</p>
+                <p>PERCENTAGE : 95.2%</p>
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-icon">
+                <img src="/assest/img/briefcase.png" alt="Bag Icon" class="bag-icon">
+                <span class="year">2021 - 2022</span>
+            </div>
+            <div class="education-details">
+                <h3>Intermediate School</h3>
+                <p>M.Nanjappa Chettair Matriculation Higher Secondary School, Muthalipalayam pirivu, Arasur Post<br> Coimbatore - 641407</p>
+                <p>PERCENTAGE : 87.6%</p>
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-icon">
+                <img src="/assest/img/briefcase.png" alt="Bag Icon" class="bag-icon">
+                <span class="year">2022 - 2026</span>
+            </div>
+            <div class="education-details">
+                <h3>College</h3>
+                <p>Sri Shakthi Institute Of Engineering And Technology, L&T Bypass, Chinniyampalayam main Post<br> Coimbatore - 641062</p>
+                <p>BE-CSE with CGPA : 8.78</p>
+            </div>
+        </div>
     </div>
 
     <div class="section4">
-        <h1 class="section-title">Internship</h1>
-        <p><span>Codsoft</span>, Completed a 1-month internship in UI/UX design, gaining hands-on experience in Figma, Adobe XD, and design
-            tools. Worked on improving user experience through innovative designs and user feedback.</p>
-        <p><span>ShadowFox</span>, Completed a 1-month UI/UX design internship, where I contributed to the design of interactive websites and
-            mobile applications, applying responsive design principles and improving design aesthetics.</p>
+        <h1 class="section-title">INTERNSHIP</h1>
+        <p><span>CODSOFT</span><BR><BR>  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Completed a 1-month internship in UI/UX design, gaining hands-on experience in Figma, Adobe XD, and design
+            tools. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Worked on improving user experience through innovative designs and user feedback.</p>
+        <p>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am proficient in programming languages like Java, C, and Python at an intermediate level, and have strong skills in &nbsp;&nbsp;&nbsp;&nbsp; designing and front-end development.
+        <p><span>SHADOWFOX</span><BR><BR>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Completed a 1-month UI/UX design internship, where I contributed to the design of interactive websites and
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mobile applications, applying responsive design principles and improving design aesthetics.</p>
     </div>
 
     <div class="section5">
-        <h1 class="section-title">Skills</h1>
+        <h1 class="section-title">SKILLS</h1>
         <div class="skills-section">
-            <span class="title">HTML</span>
+
+            <span class="title">Front-End Development</span>
 
             <div class="skill-bar">
                 <span class="skill-per html">
                     <span class="tooltip">50%</span>
-                </span>
+                </span> 
             </div>
-        </div>
+        </div><br>
 
         <div class="skill-box">
-            <span class="title">CSS</span>
+            <span class="title">UI/UX Designing</span>
 
             <div class="skill-bar">
                 <span class="skill-per css">
                     <span class="tooltip">70%</span>
                 </span>
             </div>
-        </div>
+        </div><br>
         <div class="skill-box">
-            <span class="title">JavaScript</span>
+            <span class="title">MERN Stack</span>
 
             <div class="skill-bar">
                 <span class="skill-per javascript">
                     <span class="tooltip">50%</span>
                 </span>
             </div>
-        </div>
+        </div><br>
         <div class="skill-box">
-            <span class="title">NodeJS</span>
+            <span class="title">Programming(C,JAVA,PYTHON)</span>
 
             <div class="skill-bar">
                 <span class="skill-per nodejs">
-                    <span class="tooltip">30%</span>
+                    <span class="tooltip">80%</span>
+                </span>
+            </div>
+        </div><br>
+        <div class="skill-box">
+            <span class="title">DBMS</span>
+
+            <div class="skill-bar">
+                <span class="skill-per nodejs">
+                    <span class="tooltip">70%</span>
                 </span>
             </div>
         </div>
+
     </div>
         </div>
         </div>
     </div>
+<aside>
+    <div class="section6">
+        <a href="tel:+91 7395860211">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:ranjithselvaraj04@gmail.com">
+            <i class="fa-solid fa-envelope text-white"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+            <i class="fa-brands fa-linkedin-in text-white"></i>
+        </a>
+    </div>
+</aside>
 
    <div class="parent">
   <div class="child child-1">
@@ -400,8 +511,7 @@
         viewBox="0 0 512 512"
         fill="#1e90ff">
         <path
-          d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-        ></path>
+          d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
       </svg>
     </button>
   </div>
@@ -448,31 +558,38 @@
     <div class="force-overflow"></div>
   </div>
 <script>
-    // $(document).ready(function () {
-    //       if (!$.browser.webkit) {
-    //           $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
-    //       }
-    //   });
+    $(document).ready(function () {
+          if (!$.browser.webkit) {
+              $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+          }
+      });
+      const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        const sliderContainers = document.querySelectorAll('.slider-container');
 
-      let x = "Ranjith";
-      let y = 118;
-      console.log(x + " " + y);
+        let currentIndex = 1;
 
-      let dat = 
-      {
-        name : "Ranjith S",
-        Roll : "22CS118",
-        tel : 7395860211
-      }
+        function updateSlider() {
+            sliderContainers.forEach((container, index) => {
+                if (index === currentIndex) {
+                    container.classList.add('active');
+                } else {
+                    container.classList.remove('active');
+                }
+            });
+        }
 
-      let data = {
-        "name" : "Ranjith S",
-        "Roll" : "22CS118",
-        "tel" : 7395860211
-      }
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex === 0) ? sliderContainers.length - 1 : currentIndex - 1;
+            updateSlider();
+        });
 
-      console.log(dat);
-      console.log(data);
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex === sliderContainers.length - 1) ? 0 : currentIndex + 1;
+            updateSlider();
+        });
+
+        updateSlider();
 
 </script>
 
