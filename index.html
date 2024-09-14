@@ -65,12 +65,15 @@
 
         .section2, .section3, .section4, .section5 {
             width: 80%;
+            display: flex;
+            flex-direction: column;
             padding: 20px;
             background-color: #fff;
             margin: 15px 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
+
 
         .section-title {
             color: rgb(182, 22, 75);
@@ -210,15 +213,18 @@
 
         /* From Uiverse.io by javierBarroso */ 
         .parent {
+            display: flex;
+            flex-direction: row;
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 100px;
+        gap: 50px;
         }
 
         .child {
+    
         width: 60px;
         height: 60px;
         display: flex;
@@ -318,7 +324,7 @@
             color: white;
             padding: 5px 10px;
             border-radius: 0 10px 0 10px;
-            margin: 15px;
+            margin: 10px;
             /* margin-right: 20px; */
         }
 
@@ -344,26 +350,119 @@
             margin: 0;
             
         }
-        .section6 {
-            width: 970px;
-            height: 60px;
+
+        /* .section7 {
+            width: 80%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-            font-weight: bold;
-            border-radius: 5px;
-            background: #68043e;
-            /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #6aa702, #e22da0);
-            /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #02ab7e, #8d0d76);
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            margin-bottom: 1.3rem;
+            flex-direction: column;
+            padding: 20px;
+            background-color: #fff;
+            margin: 15px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            }
+
+            .carousel-button {
+                
+
+                position: absolute;
+                top: 580%;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                z-index: 100;
+                font-size: 18px;
+            }
+
+            .carousel-button.left {
+                display: flex;
+                flex-direction: column;
+                left: 60px;
+            }
+
+            .carousel-button.right {
+                display: flex;
+                flex-direction: column;
+                right: 60px;
+            }
+
+            .project-carousel {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                overflow: hidden;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .project-card {
+                flex: 1 0 25%; 
+                max-width: 25%; 
+                cursor: pointer;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: white;
+                transition: transform 0.3s ease;
+                position: relative;
+                display: block;
+            }
+
+            .project-card img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+
+            .project-card h2 {
+                margin: 10px 0;
+            }
+
+            .project-card p {
+                font-size: 14px;
+                color: #555;
+            }
+
+            .project-card:hover {
+                transform: scale(1.05); 
+            }
+
+            .project-details {
+                display: none;
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                right: 10px;
+                background-color: rgba(255, 255, 255, 0.8);
+                padding: 10px;
+                border-radius: 10px;
+            }
+
+            .project-card:hover .project-details {
+                display: block;
+            } */
+
+            /* .project-carousel {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .project-card {
+                min-width: 300px; 
+                flex-shrink: 0;   
+                margin-right: 20px; 
+            } */
+        h1{
+            padding-top: -10px;
 
         }
-
-        
+                
         
     </style>
 </head>
@@ -381,7 +480,7 @@
 
     <div class="section2">
         <h1 class="section-title">ABOUT ME</h1>
-        <p>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am proficient in programming languages like Java, C, and Python at an intermediate level, and have strong skills in designing and front-end &nbsp;&nbsp;development.
+        <p>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am proficient in programming languages like Java, C, and Python at an intermediate level, and have strong skills in designing and front-end development.
              I am experienced in creating responsive and user-friendly web layouts using HTML, CSS, and JavaScript. 
             Additionally, I have a solid understanding of UI/UX design tools such as Figma, allowing me to bridge the gap between design and development effectively..</p>
     </div>
@@ -395,7 +494,7 @@
             </div>
             <div class="education-details">
                 <h3>High School</h3>
-                <p>M.Nanjappa Chettair Matriculation Higher Secondary School Muthalipalayam pirivu, Arasur Post<br> Coimbatore - 641407</p>
+                <p>M.Nanjappa Chettair Matriculation Higher Secondary School Muthalipalayam pirivu, Arasur<br> Coimbatore - 641407</p>
                 <p>PERCENTAGE : 95.2%</p>
             </div>
         </div>
@@ -407,7 +506,7 @@
             </div>
             <div class="education-details">
                 <h3>Intermediate School</h3>
-                <p>M.Nanjappa Chettair Matriculation Higher Secondary School, Muthalipalayam pirivu, Arasur Post<br> Coimbatore - 641407</p>
+                <p>M.Nanjappa Chettair Matriculation Higher Secondary School, Muthalipalayam pirivu, Arasur <br> Coimbatore - 641407</p>
                 <p>PERCENTAGE : 87.6%</p>
             </div>
         </div>
@@ -419,7 +518,7 @@
             </div>
             <div class="education-details">
                 <h3>College</h3>
-                <p>Sri Shakthi Institute Of Engineering And Technology, L&T Bypass, Chinniyampalayam main Post<br> Coimbatore - 641062</p>
+                <p>Sri Shakthi Institute Of Engineering And Technology, L&T Bypass, Chinniyampalayam Main , <br> Coimbatore - 641062</p>
                 <p>BE-CSE with CGPA : 8.78</p>
             </div>
         </div>
@@ -428,10 +527,10 @@
     <div class="section4">
         <h1 class="section-title">INTERNSHIP</h1>
         <p><span>CODSOFT</span><BR><BR>  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Completed a 1-month internship in UI/UX design, gaining hands-on experience in Figma, Adobe XD, and design
-            tools. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Worked on improving user experience through innovative designs and user feedback.</p>
-        <p>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am proficient in programming languages like Java, C, and Python at an intermediate level, and have strong skills in &nbsp;&nbsp;&nbsp;&nbsp; designing and front-end development.
+            tools. Worked on improving user experience through innovative designs and user feedback.</p>
+        <p>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am proficient in programming languages like Java, C, and Python at an intermediate level, and have strong skills in designing and front-end development.
         <p><span>SHADOWFOX</span><BR><BR>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Completed a 1-month UI/UX design internship, where I contributed to the design of interactive websites and
-            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mobile applications, applying responsive design principles and improving design aesthetics.</p>
+            mobile applications, applying responsive design principles and improving design aesthetics.</p>
     </div>
 
     <div class="section5">
@@ -488,19 +587,61 @@
         </div>
         </div>
     </div>
-<aside>
+<!-- 
+    <div class="section7">
+        <h1 class="section-title">PROJECTS</h1>
+        <button class="carousel-button left" onclick="moveRight()">⮜</button>
+        <div class="project-carousel" id="carousel">
+            <div class="project-card" data-project="1">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="project-details">
+                    <h2>Project 1</h2>
+                    <p>Details about project 1...</p>
+                </div>
+            </div>
+            <div class="project-card" data-project="2">
+                <img src="assest/img/Pro2.png" alt="Project 2">
+                <div class="project-details">
+                    <h2>Project 2</h2>
+                    <p>Details about project 2...</p>
+                </div>
+            </div>
+            <div class="project-card" data-project="3">
+                <img src="assest/img/Pro1.jpeg" alt="Project 3">
+                <div class="project-details">
+                    <h2>Project 3</h2>
+                    <p>Details about project 3...</p>
+                </div>
+            </div>
+            <div class="project-card" data-project="4">
+                <img src="assest/img/Pro3.jpeg" alt="Project 4">
+                <div class="project-details">
+                    <h2>Project 4</h2>
+                    <p>Details about project 4...</p>
+                </div>
+            </div>
+            <div class="project-card" data-project="5">
+                <img src="assest/img/Pro1.jpeg" alt="Project 5">
+                <div class="project-details">
+                    <h2>Project 5</h2>
+                    <p>Details about project 5...</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-button right" onclick="moveLeft()">⮞</button>
+    </div>
+    
     <div class="section6">
         <a href="tel:+91 7395860211">
-            <i class="fa fa-phone" aria-hidden="true"></i>
+            <i class="fa fa-phone"></i>
         </a>
         <a href="mailto:ranjithselvaraj04@gmail.com">
-            <i class="fa-solid fa-envelope text-white"></i>
+            <i class="fa-solid fa-envelope"></i>
         </a>
         <a href="https://www.linkedin.com/" target="_blank">
-            <i class="fa-brands fa-linkedin-in text-white"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
         </a>
-    </div>
-</aside>
+    </div> -->
 
    <div class="parent">
   <div class="child child-1">
@@ -558,39 +699,40 @@
     <div class="force-overflow"></div>
   </div>
 <script>
-    $(document).ready(function () {
-          if (!$.browser.webkit) {
-              $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
-          }
-      });
-      const prevButton = document.querySelector('.prev');
-        const nextButton = document.querySelector('.next');
-        const sliderContainers = document.querySelectorAll('.slider-container');
 
-        let currentIndex = 1;
+const carousel = document.getElementById('carousel');
+const projectCards = document.querySelectorAll('.project-card');
+let currentPosition = 0;
+const totalProjects = projectCards.length;
 
-        function updateSlider() {
-            sliderContainers.forEach((container, index) => {
-                if (index === currentIndex) {
-                    container.classList.add('active');
-                } else {
-                    container.classList.remove('active');
-                }
-            });
-        }
+// Move the carousel to the left (previous project)
+document.querySelector('.carousel-button.left').addEventListener('click', () => {
+    if (currentPosition > 0) {
+        currentPosition--;
+    } else {
+        currentPosition = totalProjects - 1; // Loop back to the last project
+    }
+    updateCarousel();
+});
 
-        prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex === 0) ? sliderContainers.length - 1 : currentIndex - 1;
-            updateSlider();
-        });
+// Move the carousel to the right (next project)
+document.querySelector('.carousel-button.right').addEventListener('click', () => {
+    if (currentPosition < totalProjects - 1) {
+        currentPosition++;
+    } else {
+        currentPosition = 0; // Loop back to the first project
+    }
+    updateCarousel();
+});
 
-        nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex === sliderContainers.length - 1) ? 0 : currentIndex + 1;
-            updateSlider();
-        });
+// Update carousel position based on the current position
+function updateCarousel() {
+    const cardWidth = projectCards[0].clientWidth + 20; // Adjust for card width and gap
+    carousel.style.transform = `translateX(${-currentPosition * cardWidth}px)`;
+}
 
-        updateSlider();
 
+    
 </script>
 
 </body>
